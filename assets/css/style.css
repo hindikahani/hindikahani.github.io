@@ -1,74 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari&display=swap');
 
-body {
-  font-family: 'Noto Sans Devanagari', sans-serif;
+* {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background: #fafafa;
+}
+
+body {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  background: #f9f9f9;
   color: #222;
-  line-height: 1.8;
+  line-height: 1.6;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 960px;
   margin: auto;
   padding: 1rem;
 }
 
-/* Header */
-.site-header {
-  background: #20232a;
-  color: #fff;
-  padding: 1rem 0;
+header {
+  background: #24292f;
+  color: white;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.site-header h1 {
-  margin: 0;
-  text-align: center;
-  font-size: 2rem;
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.site-header nav {
-  text-align: center;
-  margin-top: 0.5rem;
+header h1 {
+  font-size: 1.5rem;
 }
 
-.site-header nav a {
-  color: #61dafb;
-  margin: 0 10px;
+nav {
+  display: none;
+  flex-direction: column;
+  background-color: #24292f;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0.5rem;
   text-decoration: none;
   font-weight: bold;
 }
 
-.site-header nav a:hover {
+nav a:hover {
   text-decoration: underline;
+}
+
+.menu-toggle {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+@media (min-width: 768px) {
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    position: static;
+    background: none;
+  }
+
+  .menu-toggle {
+    display: none;
+  }
+}
+
+/* Post Section */
+.section-title {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+.post-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.8rem;
+}
+
+.post-list a {
+  background: white;
+  padding: 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  border-left: 5px solid #0066cc;
+  transition: 0.2s ease;
+}
+
+.post-list a:hover {
+  background: #eef7ff;
 }
 
 /* Footer */
-.site-footer {
-  background: #20232a;
-  color: #aaa;
+footer {
+  background: #24292f;
+  color: #ccc;
   text-align: center;
   padding: 1rem;
-  margin-top: 2rem;
-}
-
-/* Posts */
-main h2 {
-  color: #333;
-  margin-top: 2rem;
-}
-
-main p {
-  margin: 1rem 0;
-  font-size: 1.1rem;
-}
-
-a {
-  color: #0066cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  }
+    

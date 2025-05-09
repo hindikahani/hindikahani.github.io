@@ -2,18 +2,58 @@
 
 body {
   font-family: 'Noto Sans Devanagari', sans-serif;
-  background: #fdfdfd;
+  background: #fff;
   color: #222;
-  line-height: 1.8;
   max-width: 800px;
   margin: auto;
   padding: 1rem;
+  line-height: 1.8;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header nav h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 2rem;
 }
 
 h1, h2, h3 {
-  color: #222;
-  margin-top: 1.5rem;
   font-weight: bold;
+  color: #111;
+  margin-top: 1.5rem;
+}
+
+p {
+  margin: 1rem 0;
 }
 
 a {

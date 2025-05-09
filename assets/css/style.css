@@ -2,58 +2,66 @@
 
 body {
   font-family: 'Noto Sans Devanagari', sans-serif;
-  background: #fff;
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
   color: #222;
-  max-width: 800px;
-  margin: auto;
-  padding: 1rem;
   line-height: 1.8;
 }
 
-header nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1rem;
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 1rem;
 }
 
-header nav h1 {
+/* Header */
+.site-header {
+  background: #20232a;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.site-header h1 {
   margin: 0;
-  font-size: 1.8rem;
+  text-align: center;
+  font-size: 2rem;
 }
 
-header nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  gap: 1rem;
+.site-header nav {
+  text-align: center;
+  margin-top: 0.5rem;
 }
 
-header nav ul li a {
+.site-header nav a {
+  color: #61dafb;
+  margin: 0 10px;
   text-decoration: none;
-  color: #0066cc;
   font-weight: bold;
 }
 
-header nav ul li a:hover {
+.site-header nav a:hover {
   text-decoration: underline;
 }
 
-footer {
+/* Footer */
+.site-footer {
+  background: #20232a;
+  color: #aaa;
   text-align: center;
-  font-size: 0.9rem;
-  color: #666;
+  padding: 1rem;
   margin-top: 2rem;
 }
 
-h1, h2, h3 {
-  font-weight: bold;
-  color: #111;
-  margin-top: 1.5rem;
+/* Posts */
+main h2 {
+  color: #333;
+  margin-top: 2rem;
 }
 
-p {
+main p {
   margin: 1rem 0;
+  font-size: 1.1rem;
 }
 
 a {
@@ -64,9 +72,3 @@ a {
 a:hover {
   text-decoration: underline;
 }
-
-code {
-  background: #eee;
-  padding: 2px 5px;
-  border-radius: 4px;
-  }

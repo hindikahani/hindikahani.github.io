@@ -218,6 +218,74 @@ nav a:hover {
   background: #eef7ff;
 }
 
+/* Single Post Page Styles */
+.post-content {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.post-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.post-meta {
+  font-size: 0.85rem; /* छोटा किया गया फ़ॉन्ट साइज़ */
+  color: #777;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.post-content p,
+.post-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Mobile responsiveness for post content */
+@media (max-width: 600px) {
+  .post-title {
+    font-size: 1.75rem;
+  }
+
+  .post-content {
+    padding: 0.8rem;
+  }
+
+  .post-content p,
+  .post-content li {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+
+  .post-content h2,
+  .post-content h3,
+  .post-content h4 {
+    font-size: 1.3rem;
+    margin-top: 1.2rem;
+  }
+}
+
 /* Footer */
 footer {
   background: #24292f;

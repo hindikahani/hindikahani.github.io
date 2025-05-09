@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi" itemscope itemtype="http://schema.org/Blog">
+<html lang="hi">
   <head>
     <meta charset="UTF-8">
     <title>{{ page.title }} | {{ site.title }}</title>
@@ -7,13 +7,20 @@
     <meta name="description" content="{{ site.description }}">
     {% seo %}
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <script>
+      function toggleMenu() {
+        const nav = document.getElementById('nav-links');
+        nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+      }
+    </script>
   </head>
   <body>
 
-    <header class="site-header">
+    <header>
       <div class="container">
-        <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-        <nav>
+        <h1><a href="{{ '/' | relative_url }}" style="color:white;text-decoration:none;">{{ site.title }}</a></h1>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <nav id="nav-links">
           <a href="{{ '/' | relative_url }}">होम</a>
           <a href="{{ '/about' | relative_url }}">परिचय</a>
           <a href="{{ '/contact' | relative_url }}">संपर्क</a>
@@ -25,12 +32,9 @@
       {{ content }}
     </main>
 
-    <footer class="site-footer">
-      <div class="container">
-        <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }} — सभी अधिकार सुरक्षित।</p>
-      </div>
+    <footer>
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }} — सभी अधिकार सुरक्षित।</p>
     </footer>
 
   </body>
-  </html>
-  
+</html>

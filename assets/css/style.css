@@ -159,14 +159,11 @@ nav a:hover {
 }
 
 .story-meta {
-  font-size: 0.8rem;
-  color: #777;
-  margin-bottom: 0.3rem;
+  display: none; /* Hide meta info in story cards */
 }
 
 .story-card p {
-  font-size: 0.9rem;
-  color: #555;
+  display: none; /* Hide excerpt in story cards */
 }
 
 /* Popular Stories Section */
@@ -195,15 +192,15 @@ nav a:hover {
   background-color: #0052a3;
 }
 
-/* Post List */
-.post-list {
+/* Post List (for "नवीनतम कहानियाँ") */
+.latest-stories .post-list {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.6rem; /* Reduced gap */
   margin-top: 0.8rem; /* Reduced top margin */
 }
 
-.post-list a {
+.latest-stories .post-list a {
   background: white;
   padding: 0.8rem; /* Reduced padding */
   border-radius: 6px;
@@ -211,10 +208,11 @@ nav a:hover {
   color: #333;
   border-left: 3px solid #0066cc; /* Smaller border */
   transition: 0.2s ease;
-  font-size: 0.95rem; /* Slightly smaller font */
+  font-size: 1.05rem; /* Slightly larger font for titles */
+  font-weight: bold; /* Make titles bold */
 }
 
-.post-list a:hover {
+.latest-stories .post-list a:hover {
   background: #eef7ff;
 }
 
@@ -294,4 +292,4 @@ footer {
   padding: 0.8rem; /* Reduced padding */
   margin-top: 2rem; /* Reduced margin */
   font-size: 0.8rem;
-  }
+    }

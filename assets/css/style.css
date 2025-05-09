@@ -12,19 +12,19 @@ body {
   background: #f9f9f9;
   color: #222;
   line-height: 1.6;
-  font-size: 1rem; /* Base font size */
+  font-size: 1rem;
 }
 
 .container {
   max-width: 960px;
   margin: auto;
-  padding: 0.5rem; /* Reduced padding for smaller screens */
+  padding: 0.5rem;
 }
 
 header {
   background: #24292f;
   color: white;
-  padding: 0.5rem; /* Reduced header padding */
+  padding: 0.5rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -37,7 +37,7 @@ header .container {
 }
 
 header h1 {
-  font-size: 1.2rem; /* Smaller header font size */
+  font-size: 1.2rem;
 }
 
 nav {
@@ -45,17 +45,17 @@ nav {
   flex-direction: column;
   background-color: #24292f;
   position: absolute;
-  top: 45px; /* Adjusted top position */
-  right: 5px; /* Adjusted right position */
-  z-index: 1001; /* Ensure it's above other elements */
+  top: 45px;
+  right: 5px;
+  z-index: 1001;
 }
 
 nav a {
   color: white;
-  margin: 0.3rem; /* Reduced link margin */
+  margin: 0.3rem;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.5rem; /* Added padding to links for touch targets */
+  padding: 0.5rem;
 }
 
 nav a:hover {
@@ -70,7 +70,7 @@ nav a:hover {
 
 @media (min-width: 768px) {
   body {
-    font-size: 1.1rem; /* Larger font size for desktops */
+    font-size: 1.1rem;
   }
 
   .container {
@@ -105,13 +105,13 @@ nav a:hover {
 /* Hero Section */
 .hero {
   background-color: #eef7ff;
-  padding: 1.5rem 1rem; /* Reduced padding */
+  padding: 1.5rem 1rem;
   text-align: center;
-  margin-bottom: 1.5rem; /* Reduced margin */
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-  font-size: 2rem; /* Smaller hero heading */
+  font-size: 2rem;
   margin-bottom: 0.3rem;
   color: #0066cc;
 }
@@ -121,59 +121,45 @@ nav a:hover {
   color: #555;
 }
 
-/* Latest Stories Section */
-.latest-stories .section-title,
-.popular-stories .section-title {
-  font-size: 1.3rem; /* Smaller section title */
-  margin: 1.5rem 0 0.8rem; /* Reduced margin */
+/* Section Titles */
+.latest-posts .section-title,
+.popular-posts .section-title {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem;
   border-bottom: 2px solid #ccc;
   padding-bottom: 0.3rem;
 }
 
-.story-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* More flexible grid for small screens */
-  gap: 1rem;
+/* Post List Styling */
+.latest-posts .post-list,
+.popular-posts .post-list {
+  margin-top: 1rem;
 }
 
-.story-card {
-  background: white;
-  padding: 0.8rem; /* Reduced padding */
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: transform 0.2s ease-in-out;
-}
-
-.story-card:hover {
-  transform: translateY(-3px);
-}
-
-.story-card a {
+.latest-posts .post-list a,
+.popular-posts .post-list a {
+  display: block;
+  padding: 0.7rem 0;
   text-decoration: none;
   color: #333;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease-in-out;
 }
 
-.story-card h3 {
-  font-size: 1rem; /* Smaller card heading */
-  margin-bottom: 0.3rem;
+.latest-posts .post-list a:hover,
+.popular-posts .post-list a:hover {
+  background-color: #f9f9f9;
+  color: #0066cc;
 }
 
-.story-meta {
-  display: none; /* Hide meta info in story cards */
-}
-
-.story-card p {
-  display: none; /* Hide excerpt in story cards */
-}
-
-/* Popular Stories Section */
-.popular-stories .story-card.popular {
-  border-left: 3px solid #ff8c00; /* Smaller highlight */
+.latest-posts .post-list a:last-child,
+.popular-posts .post-list a:last-child {
+  border-bottom: none;
 }
 
 /* View All Link */
 .view-all {
-  margin-top: 1.5rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -181,7 +167,7 @@ nav a:hover {
   display: inline-block;
   background-color: #0066cc;
   color: white;
-  padding: 0.6rem 1.2rem; /* Smaller button */
+  padding: 0.6rem 1.2rem;
   text-decoration: none;
   border-radius: 6px;
   font-size: 0.9rem;
@@ -190,30 +176,6 @@ nav a:hover {
 
 .view-all a:hover {
   background-color: #0052a3;
-}
-
-/* Post List (for "नवीनतम कहानियाँ") */
-.latest-stories .post-list {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.6rem; /* Reduced gap */
-  margin-top: 0.8rem; /* Reduced top margin */
-}
-
-.latest-stories .post-list a {
-  background: white;
-  padding: 0.8rem; /* Reduced padding */
-  border-radius: 6px;
-  text-decoration: none;
-  color: #333;
-  border-left: 3px solid #0066cc; /* Smaller border */
-  transition: 0.2s ease;
-  font-size: 1.05rem; /* Slightly larger font for titles */
-  font-weight: bold; /* Make titles bold */
-}
-
-.latest-stories .post-list a:hover {
-  background: #eef7ff;
 }
 
 /* Single Post Page Styles */
@@ -231,7 +193,7 @@ nav a:hover {
 }
 
 .post-meta {
-  font-size: 0.85rem; /* छोटा किया गया फ़ॉन्ट साइज़ */
+  font-size: 0.85rem;
   color: #777;
   margin-bottom: 1rem;
   font-style: italic;
@@ -289,7 +251,7 @@ footer {
   background: #24292f;
   color: #ccc;
   text-align: center;
-  padding: 0.8rem; /* Reduced padding */
-  margin-top: 2rem; /* Reduced margin */
+  padding: 0.8rem;
+  margin-top: 2rem;
   font-size: 0.8rem;
-    }
+}

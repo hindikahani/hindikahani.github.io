@@ -12,19 +12,19 @@ body {
   background: #f9f9f9;
   color: #222;
   line-height: 1.6;
+  font-size: 1rem; /* Base font size */
 }
 
 .container {
   max-width: 960px;
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem; /* Reduced padding for smaller screens */
 }
 
-/* Header */
 header {
   background: #24292f;
   color: white;
-  padding: 1rem;
+  padding: 0.5rem; /* Reduced header padding */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -37,7 +37,7 @@ header .container {
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Smaller header font size */
 }
 
 nav {
@@ -45,15 +45,17 @@ nav {
   flex-direction: column;
   background-color: #24292f;
   position: absolute;
-  top: 60px;
-  right: 10px;
+  top: 45px; /* Adjusted top position */
+  right: 5px; /* Adjusted right position */
+  z-index: 1001; /* Ensure it's above other elements */
 }
 
 nav a {
   color: white;
-  margin: 0.5rem;
+  margin: 0.3rem; /* Reduced link margin */
   text-decoration: none;
   font-weight: bold;
+  padding: 0.5rem; /* Added padding to links for touch targets */
 }
 
 nav a:hover {
@@ -67,11 +69,32 @@ nav a:hover {
 }
 
 @media (min-width: 768px) {
+  body {
+    font-size: 1.1rem; /* Larger font size for desktops */
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  header {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
   nav {
     display: flex !important;
     flex-direction: row;
     position: static;
     background: none;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+    padding: 0;
   }
 
   .menu-toggle {
@@ -82,47 +105,47 @@ nav a:hover {
 /* Hero Section */
 .hero {
   background-color: #eef7ff;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem; /* Reduced padding */
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem; /* Reduced margin */
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem; /* Smaller hero heading */
+  margin-bottom: 0.3rem;
   color: #0066cc;
 }
 
 .hero p {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #555;
 }
 
 /* Latest Stories Section */
 .latest-stories .section-title,
 .popular-stories .section-title {
-  font-size: 1.6rem;
-  margin: 2rem 0 1rem;
+  font-size: 1.3rem; /* Smaller section title */
+  margin: 1.5rem 0 0.8rem; /* Reduced margin */
   border-bottom: 2px solid #ccc;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.3rem;
 }
 
 .story-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* More flexible grid for small screens */
+  gap: 1rem;
 }
 
 .story-card {
   background: white;
-  padding: 1rem;
+  padding: 0.8rem; /* Reduced padding */
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow */
   transition: transform 0.2s ease-in-out;
 }
 
 .story-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-3px);
 }
 
 .story-card a {
@@ -131,29 +154,29 @@ nav a:hover {
 }
 
 .story-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 1rem; /* Smaller card heading */
+  margin-bottom: 0.3rem;
 }
 
 .story-meta {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #777;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.3rem;
 }
 
 .story-card p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555;
 }
 
 /* Popular Stories Section */
 .popular-stories .story-card.popular {
-  border-left: 5px solid #ff8c00; /* Example highlight for popular */
+  border-left: 3px solid #ff8c00; /* Smaller highlight */
 }
 
 /* View All Link */
 .view-all {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 
@@ -161,9 +184,10 @@ nav a:hover {
   display: inline-block;
   background-color: #0066cc;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.6rem 1.2rem; /* Smaller button */
   text-decoration: none;
   border-radius: 6px;
+  font-size: 0.9rem;
   transition: background-color 0.2s ease;
 }
 
@@ -171,22 +195,23 @@ nav a:hover {
   background-color: #0052a3;
 }
 
-/* Post List (keeping your original styles for blog index if needed) */
+/* Post List */
 .post-list {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.8rem;
-  margin-top: 1rem; /* Added some top margin */
+  gap: 0.6rem; /* Reduced gap */
+  margin-top: 0.8rem; /* Reduced top margin */
 }
 
 .post-list a {
   background: white;
-  padding: 1rem;
+  padding: 0.8rem; /* Reduced padding */
   border-radius: 6px;
   text-decoration: none;
   color: #333;
-  border-left: 5px solid #0066cc;
+  border-left: 3px solid #0066cc; /* Smaller border */
   transition: 0.2s ease;
+  font-size: 0.95rem; /* Slightly smaller font */
 }
 
 .post-list a:hover {
@@ -198,7 +223,7 @@ footer {
   background: #24292f;
   color: #ccc;
   text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  font-size: 0.9rem;
+  padding: 0.8rem; /* Reduced padding */
+  margin-top: 2rem; /* Reduced margin */
+  font-size: 0.8rem;
 }

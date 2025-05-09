@@ -1,11 +1,12 @@
 title: हिंदी कहानी
-description: प्रेरणादायक और ऐतिहासिक कहानियाँ – और पॉपुलर जीवनी
-author: आपका नाम
-email: your@email.com
+description: प्रेरणादायक हिंदी कहानियाँ, ऐतिहासिक कहानियाँ, और लोकप्रिय व्यक्तियों की जीवनियाँ।
+author: मुशाहिद रज़ा
+email: raza_mushahid@yahoo.com
 baseurl: "" # for GitHub Pages
 url: "https://hindikahani.github.io"
 
 theme: null
+
 markdown: kramdown
 permalink: /:title/
 
@@ -25,9 +26,15 @@ exclude:
   - vendor
 
 # Google Search Console or Analytics (optional)
-google_site_verification: "" # Apna code daalein agar chahiye
+google_site_verification: "" # अपना कोड डालें अगर चाहिए
 
 # Social (optional)
+# अपनी सोशल मीडिया प्रोफाइल के उपयोगकर्ता नाम यहाँ डालें
 twitter:
   username: ""
-  
+github:
+  username: ""
+# facebook:
+#   username:
+# instagram:
+#   username:

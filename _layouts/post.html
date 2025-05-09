@@ -7,4 +7,16 @@ layout: blog
   <div class="post-content">
     {{ content }}
   </div>
+
+  <!-- नई कहानियाँ सेक्शन -->
+  <section style="margin-top: 3rem;">
+    <h2 class="section-title">नई कहानियाँ</h2>
+    <div class="post-list">
+      {% for post in site.posts limit:5 %}
+        {% unless post.url == page.url %}
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
 </article>

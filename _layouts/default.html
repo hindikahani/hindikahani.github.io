@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" itemscope itemtype="http://schema.org/Blog">
   <head>
     <meta charset="UTF-8">
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author.name }}">
     {% seo %}
-
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
   </head>
   <body>
-    <header>
-      <h1>{{ site.title }}</h1>
-      <p>{{ site.description }}</p>
-      <hr>
-    </header>
 
-    <main>
+    {% include header.html %}
+
+    <main itemprop="mainContentOfPage">
       {{ content }}
     </main>
 
-    <footer>
-      <hr>
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.author.name }}. सभी अधिकार सुरक्षित।</p>
-    </footer>
+    {% include footer.html %}
+
   </body>
 </html>

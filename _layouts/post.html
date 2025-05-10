@@ -2,14 +2,17 @@
 layout: blog
 ---
 
-<article class="container">
-  <h1>{{ page.title }}</h1>
+<article class="container post-wrapper">
+  <h1 class="post-title">{{ page.title }}</h1>
   <p class="post-meta">प्रकाशित: {{ page.date | date: "%B %d, %Y" }}</p>
   {% if page.author %}
   <p class="post-meta">लेखक: {{ page.author }}</p>
   {% endif %}
-  <hr style="border-top: 1px solid #ccc; margin: 1rem 0;">
-  {{ content }}
+  <hr class="post-title-separator">
+
+  <div class="post-content">
+    {{ content }}
+  </div>
 
   <section style="margin-top: 3rem;">
     <h2 class="section-title">अन्य कहानियाँ</h2>

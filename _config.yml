@@ -1,5 +1,5 @@
-title: हिंदी कहानी
-description: प्रेरणादायक हिंदी कहानियाँ, ऐतिहासिक कहानियाँ, और लोकप्रिय व्यक्तियों की जीवनियाँ।
+title: हिंदी कहानी | प्रेरणादायक और नैतिक कहानियाँ
+description: प्रेरणादायक हिंदी कहानियों, ऐतिहासिक कहानियों, और लोकप्रिय व्यक्तियों की जीवनियों का संग्रह। ज्ञानवर्धक और मनोरंजक कहानियाँ पढ़ें।
 author: मुशाहिद रज़ा
 email: raza_mushahid@yahoo.com
 baseurl: "" # for GitHub Pages
@@ -13,6 +13,7 @@ permalink: /:title/
 # Plugins
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap # XML साइटमैप के लिए जोड़ा गया
 
 # SEO Tag Config
 lang: hi

@@ -3,26 +3,22 @@ layout: blog
 ---
 
 <article class="container">
-  <section class="hero">
-    <h1>{{ page.title }}</h1>
-    <p class="post-meta">प्रकाशित: {{ page.date | date: "%B %d, %Y" }}</p>
-    {% if page.author %}
-    <p class="post-meta">लेखक: {{ page.author }}</p>
-    {% endif %}
-  </section>
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">प्रकाशित: {{ page.date | date: "%B %d, %Y" }}</p>
+  {% if page.author %}
+  <p class="post-meta">लेखक: {{ page.author }}</p>
+  {% endif %}
+  <hr style="border-top: 1px solid #ccc; margin: 1rem 0;">
+  {{ content }}
 
-  <div class="post-content story-card">
-    {{ content }}
-  </div>
-
-  <section style="margin-top: 3rem;">
-    <h2 class="section-title">अन्य कहानियाँ</h2>
-    <div class="post-list">
+  <section style="margin-top: 2rem;">
+    <h2>अन्य कहानियाँ</h2>
+    <ul>
       {% for post in site.posts limit:5 %}
         {% unless post.url == page.url %}
-          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
         {% endunless %}
       {% endfor %}
-    </div>
+    </ul>
   </section>
 </article>

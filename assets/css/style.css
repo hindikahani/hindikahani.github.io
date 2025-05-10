@@ -13,7 +13,7 @@ body {
   background: #f9f9f9;
   color: #333;
   line-height: 1.6; /* कम लाइन हाइट */
-  font-size: 0.9rem; /* मोबाइल और डिफ़ॉल्ट फ़ॉन्ट साइज़ */
+  font-size: 1.0rem; /* मोबाइल और डिफ़ॉल्ट फ़ॉन्ट साइज़ */
 }
 
 .container {
@@ -72,7 +72,7 @@ nav a:hover {
 
 @media (min-width: 768px) {
   body {
-    font-size: 0.95rem; /* डेस्कटॉप के लिए थोड़ा बड़ा फ़ॉन्ट साइज़ */
+    font-size: 1.1rem; /* डेस्कटॉप के लिए थोड़ा बड़ा फ़ॉन्ट साइज़ */
   }
 
   .container {
@@ -109,7 +109,7 @@ nav a:hover {
 .latest-posts .section-title,
 .popular-posts .section-title,
 .post-wrapper .section-title {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   margin: 1.2rem 0 0.6rem; /* कम मार्जिन */
   border-bottom: 2px solid #007bff;
   padding-bottom: 0.25rem; /* कम पैडिंग */
@@ -174,7 +174,7 @@ nav a:hover {
 
 .post-content {
   padding-top: 0.7rem; /* कम पैडिंग */
-  font-size: 0.85rem; /* छोटा फ़ॉन्ट साइज़ */
+  font-size: 0.95rem; /* छोटा फ़ॉन्ट साइज़ */
   line-height: 1.6; /* कम लाइन हाइट */
   color: #495057;
   letter-spacing: 0.01em;

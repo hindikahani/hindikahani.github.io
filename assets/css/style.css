@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
 
 /* Reset and General Styles */
@@ -13,19 +12,19 @@ body {
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
-  font-size: 0.9rem; /* और छोटा फ़ॉन्ट */
+  font-size: 0.9rem;
 }
 
 .container {
   max-width: 960px;
-  margin: 1rem auto; /* कम मार्जिन */
-  padding: 0 0.5rem; /* कम पैडिंग */
+  margin: 1rem auto;
+  padding: 0 0.5rem;
 }
 
 header {
   background: #24292f;
   color: white;
-  padding: 0.5rem; /* कम पैडिंग */
+  padding: 0.5rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -38,7 +37,7 @@ header .container {
 }
 
 header h1 {
-  font-size: 1.1rem; /* और छोटा फ़ॉन्ट */
+  font-size: 1.1rem;
 }
 
 nav {
@@ -46,17 +45,17 @@ nav {
   flex-direction: column;
   background-color: #24292f;
   position: absolute;
-  top: 35px; /* एडजस्टेड टॉप */
+  top: 35px;
   right: 5px;
   z-index: 1001;
 }
 
 nav a {
   color: white;
-  margin: 0.2rem; /* और कम मार्जिन */
+  margin: 0.2rem;
   text-decoration: none;
   font-weight: bold;
-  padding: 0.2rem; /* और कम पैडिंग */
+  padding: 0.2rem;
 }
 
 nav a:hover {
@@ -64,7 +63,7 @@ nav a:hover {
 }
 
 .menu-toggle {
-  font-size: 1.1rem; /* और छोटा फ़ॉन्ट */
+  font-size: 1.1rem;
   cursor: pointer;
   color: white;
 }
@@ -96,10 +95,10 @@ nav a:hover {
 .latest-posts .section-title,
 .popular-posts .section-title,
 .post-wrapper .section-title {
-  font-size: 1.2rem; /* और छोटा फ़ॉन्ट */
-  margin: 1.5rem 0 0.8rem; /* कम मार्जिन */
-  border-bottom: 2px solid #007bff;
-  padding-bottom: 0.3rem; /* कम पैडिंग */
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.8rem;
+  border-bottom: 2px solid #007bff; /* "अन्य कहानियाँ" हेडिंग के नीचे नीली बॉर्डर */
+  padding-bottom: 0.3rem;
   color: #333;
   font-weight: 700;
 }
@@ -108,19 +107,18 @@ nav a:hover {
 .latest-posts .post-list,
 .popular-posts .post-list,
 .post-wrapper .post-list {
-  margin-top: 0.5rem; /* और कम मार्जिन */
+  margin-top: 0.5rem;
 }
 
 .latest-posts .post-list a,
 .popular-posts .post-list a,
 .post-wrapper .post-list a {
   display: block;
-  padding: 0.4rem 0; /* और कम पैडिंग */
+  padding: 0.4rem 0;
   text-decoration: none;
   color: #333;
-  border-bottom: 1px solid #e0e0e0;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  font-size: 0.8rem; /* और छोटा फ़ॉन्ट */
+  font-size: 0.8rem;
 }
 
 .latest-posts .post-list a:hover,
@@ -133,53 +131,53 @@ nav a:hover {
 .latest-posts .post-list a:last-child,
 .popular-posts .post-list a:last-child,
 .post-wrapper .post-list a:last-child {
-  border-bottom: none;
+  border-bottom: none; /* पोस्ट लिस्ट में अब कोई बॉर्डर नहीं */
 }
 
 /* Single Post Page Styles */
 .post-wrapper {
-  padding: 0.5rem; /* और कम पैडिंग */
+  padding: 0.5rem;
 }
 
 .post-title {
-  font-size: 1.4rem; /* और छोटा फ़ॉन्ट */
+  font-size: 1.4rem;
   color: #333;
-  margin-bottom: 0.5rem; /* और कम मार्जिन */
-  padding-bottom: 0.2rem; /* और कम पैडिंग */
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.2rem;
   border-bottom: 2px solid #007bff; /* पोस्ट टाइटल के नीचे नीली बॉर्डर */
 }
 
 .post-meta {
-  font-size: 0.7rem; /* और छोटा फ़ॉन्ट */
+  font-size: 0.7rem;
   color: #6c757d;
   font-style: italic;
-  margin-bottom: 0.5rem; /* और कम मार्जिन */
+  margin-bottom: 0.5rem;
 }
 
 .post-content {
-  padding-top: 0.5rem; /* और कम पैडिंग */
-  font-size: 0.85rem; /* और छोटा फ़ॉन्ट */
-  line-height: 1.6; /* और कम लाइन-हाइट */
+  padding-top: 0.5rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
   color: #495057;
   letter-spacing: 0.01em;
 }
 
 .post-content p {
-  margin-bottom: 0.8rem; /* और कम मार्जिन */
+  margin-bottom: 0.8rem;
   padding-bottom: 0;
-  border-bottom: none;
+  border-bottom: none; /* पैराग्राफ के नीचे कोई बॉर्डर नहीं */
 }
 
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  font-size: 1rem; /* और छोटी हेडिंग */
+  font-size: 1rem;
   color: #333;
-  margin-top: 1rem; /* और कम मार्जिन */
-  margin-bottom: 0.3rem; /* और कम मार्जिन */
-  border-top: 1px solid #ccc; /* हेडिंग के ऊपर हल्की बॉर्डर */
-  padding-top: 0.4rem; /* और कम पैडिंग */
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  border-bottom: 1px solid #ccc; /* हेडिंग के नीचे हल्की ब्लैक बॉर्डर */
+  padding-bottom: 0.2rem;
 }
 
 .post-content a {
@@ -194,13 +192,13 @@ nav a:hover {
 
 .post-content ul,
 .post-content ol {
-  margin-left: 1rem; /* और कम इंडेंट */
-  margin-bottom: 0.8rem; /* और कम मार्जिन */
+  margin-left: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 /* View All Link */
 .view-all {
-  margin-top: 1rem; /* और कम मार्जिन */
+  margin-top: 1rem;
   text-align: center;
 }
 
@@ -208,10 +206,10 @@ nav a:hover {
   display: inline-block;
   background-color: #007bff;
   color: white;
-  padding: 0.4rem 0.8rem; /* और कम पैडिंग */
+  padding: 0.4rem 0.8rem;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 0.8rem; /* और छोटा फ़ॉन्ट */
+  font-size: 0.8rem;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -224,7 +222,7 @@ footer {
   background: #24292f;
   color: #f8f9fa;
   text-align: center;
-  padding: 0.4rem; /* और कम पैडिंग */
-  margin-top: 1rem; /* और कम मार्जिन */
-  font-size: 0.7rem; /* और छोटा फ़ॉन्ट */
+  padding: 0.4rem;
+  margin-top: 1rem;
+  font-size: 0.7rem;
 }

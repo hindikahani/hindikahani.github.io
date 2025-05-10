@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;700&display=swap');
 
 /* Reset and General Styles */
 * {
@@ -76,6 +76,14 @@ nav a:hover {
     padding: 0 1rem;
   }
 
+  header {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
   nav {
     display: flex !important;
     flex-direction: row;
@@ -96,7 +104,7 @@ nav a:hover {
 /* Section Titles */
 .latest-posts .section-title,
 .popular-posts .section-title,
-.post-wrapper .section-title {
+.post-wrapper h2 { /* Modified for simplicity */
   font-size: 1.6rem;
   margin: 2.5rem 0 1rem;
   border-bottom: 2px solid #007bff;
@@ -108,13 +116,15 @@ nav a:hover {
 /* Post List Styling (Homepage and Post Page's "अन्य कहानियाँ") */
 .latest-posts .post-list,
 .popular-posts .post-list,
-.post-wrapper .post-list {
+.post-wrapper ul { /* Changed to ul */
   margin-top: 1rem;
+  list-style: none; /* Remove bullets */
+  padding-left: 0; /* Remove default padding */
 }
 
 .latest-posts .post-list a,
 .popular-posts .post-list a,
-.post-wrapper .post-list a {
+.post-wrapper ul a { /* Changed to ul a */
   display: block;
   padding: 0.7rem 0;
   text-decoration: none;
@@ -125,110 +135,15 @@ nav a:hover {
 
 .latest-posts .post-list a:hover,
 .popular-posts .post-list a:hover,
-.post-wrapper .post-list a:hover {
+.post-wrapper ul a:hover {
   background-color: #f8f9fa;
   color: #007bff;
 }
 
 .latest-posts .post-list a:last-child,
 .popular-posts .post-list a:last-child,
-.post-wrapper .post-list a:last-child {
+.post-wrapper ul a:last-child {
   border-bottom: none;
-}
-
-/* Single Post Page Styles */
-.post-wrapper {
-  padding: 2rem 1rem;
-}
-
-.post-title {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #007bff; /* Border after title */
-}
-
-.post-content {
-  padding-top: 1.5rem; /* Spacing after the border */
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #495057;
-  letter-spacing: 0.01em;
-}
-
-.post-content p,
-.post-content li {
-  margin-bottom: 1rem;
-}
-
-.post-content h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-top: 1.8rem;
-  margin-bottom: 0.7rem;
-  font-weight: 700;
-}
-
-.post-content h2 {
-  font-size: 1.6rem;
-  color: #333;
-  margin-top: 1.6rem;
-  margin-bottom: 0.6rem;
-  font-weight: 700;
-}
-
-.post-content h3 {
-  font-size: 1.4rem;
-  color: #333;
-  margin-top: 1.4rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
-
-.post-content h4 {
-  font-size: 1.2rem;
-  color: #333;
-  margin-top: 1.2rem;
-  margin-bottom: 0.4rem;
-  font-weight: 700;
-}
-
-.post-content a {
-  color: #007bff;
-  text-decoration: underline;
-  transition: color 0.2s ease-in-out;
-}
-
-.post-content a:hover {
-  color: #0056b3;
-}
-
-.post-content ul,
-.post-content ol {
-  margin-left: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-/* View All Link */
-.view-all {
-  margin-top: 2rem;
-  text-align: center;
-}
-
-.view-all a {
-  display: inline-block;
-  background-color: #007bff;
-  color: white;
-  padding: 0.75rem 1.5rem;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.view-all a:hover {
-  background-color: #0056b3;
 }
 
 /* Footer */
@@ -239,4 +154,4 @@ footer {
   padding: 1rem;
   margin-top: 3rem;
   font-size: 0.9rem;
-  }
+}

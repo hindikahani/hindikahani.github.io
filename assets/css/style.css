@@ -105,19 +105,19 @@ nav a:hover {
 /* Hero Section */
 .hero {
   background-color: #eef7ff;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
   color: #0066cc;
 }
 
 .hero .post-meta {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #555;
   font-style: italic;
 }
@@ -166,35 +166,35 @@ nav a:hover {
 /* Single Post Page Styles */
 .post-content.story-card {
   background: white;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
 }
 
 .post-content p,
 .post-content li {
-  font-size: 1.05rem;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.7;
   color: #444;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   color: #333;
-  margin-top: 2rem;
-  margin-bottom: 0.7rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
   border-bottom: 1px solid #eee;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.2rem;
 }
 
 .post-content ul,
 .post-content ol {
   margin-left: 1.5rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 /* View All Link */
@@ -226,4 +226,4 @@ footer {
   padding: 0.8rem;
   margin-top: 2rem;
   font-size: 0.8rem;
-}
+  }

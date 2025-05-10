@@ -11,14 +11,14 @@ layout: blog
   <hr style="border-top: 1px solid #ccc; margin: 1rem 0;">
   {{ content }}
 
-  <section style="margin-top: 2rem;">
-    <h2>अन्य कहानियाँ</h2>
-    <ul>
+  <section style="margin-top: 3rem;">
+    <h2 class="section-title">अन्य कहानियाँ</h2>
+    <div class="post-list">
       {% for post in site.posts limit:5 %}
         {% unless post.url == page.url %}
-          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
         {% endunless %}
       {% endfor %}
-    </ul>
+    </div>
   </section>
 </article>

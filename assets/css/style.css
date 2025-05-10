@@ -12,20 +12,20 @@ body {
   font-family: 'Noto Sans Devanagari', sans-serif;
   background: #f9f9f9;
   color: #333;
-  line-height: 1.6; /* थोड़ी कम लाइन-हाइट */
-  font-size: 0.95rem; /* छोटा फ़ॉन्ट साइज़ */
+  line-height: 1.6;
+  font-size: 0.9rem; /* और छोटा फ़ॉन्ट */
 }
 
 .container {
   max-width: 960px;
-  margin: 2rem auto;
-  padding: 0 1rem;
+  margin: 1rem auto; /* कम मार्जिन */
+  padding: 0 0.5rem; /* कम पैडिंग */
 }
 
 header {
   background: #24292f;
   color: white;
-  padding: 0.8rem; /* कम पैडिंग */
+  padding: 0.5rem; /* कम पैडिंग */
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -38,7 +38,7 @@ header .container {
 }
 
 header h1 {
-  font-size: 1.3rem; /* छोटा फ़ॉन्ट साइज़ */
+  font-size: 1.1rem; /* और छोटा फ़ॉन्ट */
 }
 
 nav {
@@ -46,17 +46,17 @@ nav {
   flex-direction: column;
   background-color: #24292f;
   position: absolute;
-  top: 48px; /* एडजस्टेड टॉप */
-  right: 10px;
+  top: 35px; /* एडजस्टेड टॉप */
+  right: 5px;
   z-index: 1001;
 }
 
 nav a {
   color: white;
-  margin: 0.4rem; /* कम मार्जिन */
+  margin: 0.2rem; /* और कम मार्जिन */
   text-decoration: none;
   font-weight: bold;
-  padding: 0.4rem; /* कम पैडिंग */
+  padding: 0.2rem; /* और कम पैडिंग */
 }
 
 nav a:hover {
@@ -64,7 +64,7 @@ nav a:hover {
 }
 
 .menu-toggle {
-  font-size: 1.3rem; /* छोटा फ़ॉन्ट साइज़ */
+  font-size: 1.1rem; /* और छोटा फ़ॉन्ट */
   cursor: pointer;
   color: white;
 }
@@ -75,15 +75,15 @@ nav a:hover {
   }
 
   header {
-    padding: 1rem;
+    padding: 0.8rem;
   }
 
   header h1 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   nav a {
-    margin: 0 0.75rem;
+    margin: 0 0.5rem;
     padding: 0;
   }
 
@@ -96,10 +96,10 @@ nav a:hover {
 .latest-posts .section-title,
 .popular-posts .section-title,
 .post-wrapper .section-title {
-  font-size: 1.4rem; /* छोटा फ़ॉन्ट साइज़ */
-  margin: 2rem 0 1rem;
+  font-size: 1.2rem; /* और छोटा फ़ॉन्ट */
+  margin: 1.5rem 0 0.8rem; /* कम मार्जिन */
   border-bottom: 2px solid #007bff;
-  padding-bottom: 0.4rem; /* कम पैडिंग */
+  padding-bottom: 0.3rem; /* कम पैडिंग */
   color: #333;
   font-weight: 700;
 }
@@ -108,19 +108,19 @@ nav a:hover {
 .latest-posts .post-list,
 .popular-posts .post-list,
 .post-wrapper .post-list {
-  margin-top: 0.8rem; /* कम मार्जिन */
+  margin-top: 0.5rem; /* और कम मार्जिन */
 }
 
 .latest-posts .post-list a,
 .popular-posts .post-list a,
 .post-wrapper .post-list a {
   display: block;
-  padding: 0.6rem 0; /* कम पैडिंग */
+  padding: 0.4rem 0; /* और कम पैडिंग */
   text-decoration: none;
   color: #333;
   border-bottom: 1px solid #e0e0e0;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  font-size: 0.9rem; /* छोटा फ़ॉन्ट साइज़ */
+  font-size: 0.8rem; /* और छोटा फ़ॉन्ट */
 }
 
 .latest-posts .post-list a:hover,
@@ -138,35 +138,35 @@ nav a:hover {
 
 /* Single Post Page Styles */
 .post-wrapper {
-  padding: 1.5rem 1rem; /* कम पैडिंग */
+  padding: 0.5rem; /* और कम पैडिंग */
 }
 
 .post-title {
-  font-size: 1.8rem; /* छोटा फ़ॉन्ट साइज़ */
+  font-size: 1.4rem; /* और छोटा फ़ॉन्ट */
   color: #333;
-  margin-bottom: 0.8rem; /* कम मार्जिन */
-  padding-bottom: 0.3rem; /* कम पैडिंग */
+  margin-bottom: 0.5rem; /* और कम मार्जिन */
+  padding-bottom: 0.2rem; /* और कम पैडिंग */
   border-bottom: 2px solid #007bff; /* पोस्ट टाइटल के नीचे नीली बॉर्डर */
 }
 
 .post-meta {
-  font-size: 0.85rem; /* छोटा फ़ॉन्ट साइज़ */
+  font-size: 0.7rem; /* और छोटा फ़ॉन्ट */
   color: #6c757d;
   font-style: italic;
-  margin-bottom: 1rem; /* मार्जिन */
+  margin-bottom: 0.5rem; /* और कम मार्जिन */
 }
 
 .post-content {
-  padding-top: 1rem; /* कम पैडिंग */
-  font-size: 0.95rem; /* छोटा फ़ॉन्ट साइज़ */
-  line-height: 1.7; /* थोड़ी कम लाइन-हाइट */
+  padding-top: 0.5rem; /* और कम पैडिंग */
+  font-size: 0.85rem; /* और छोटा फ़ॉन्ट */
+  line-height: 1.6; /* और कम लाइन-हाइट */
   color: #495057;
   letter-spacing: 0.01em;
 }
 
 .post-content p {
-  margin-bottom: 1rem; /* कम मार्जिन */
-  padding-bottom: 0; /* पैराग्राफ के नीचे कोई बॉर्डर नहीं */
+  margin-bottom: 0.8rem; /* और कम मार्जिन */
+  padding-bottom: 0;
   border-bottom: none;
 }
 
@@ -174,12 +174,12 @@ nav a:hover {
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  font-size: 1.2rem; /* छोटी हेडिंग */
+  font-size: 1rem; /* और छोटी हेडिंग */
   color: #333;
-  margin-top: 1.5rem; /* कम मार्जिन */
-  margin-bottom: 0.5rem; /* कम मार्जिन */
+  margin-top: 1rem; /* और कम मार्जिन */
+  margin-bottom: 0.3rem; /* और कम मार्जिन */
   border-top: 1px solid #ccc; /* हेडिंग के ऊपर हल्की बॉर्डर */
-  padding-top: 0.8rem; /* कम पैडिंग */
+  padding-top: 0.4rem; /* और कम पैडिंग */
 }
 
 .post-content a {
@@ -194,13 +194,13 @@ nav a:hover {
 
 .post-content ul,
 .post-content ol {
-  margin-left: 1.2rem; /* कम इंडेंट */
-  margin-bottom: 1rem; /* कम मार्जिन */
+  margin-left: 1rem; /* और कम इंडेंट */
+  margin-bottom: 0.8rem; /* और कम मार्जिन */
 }
 
 /* View All Link */
 .view-all {
-  margin-top: 1.5rem; /* कम मार्जिन */
+  margin-top: 1rem; /* और कम मार्जिन */
   text-align: center;
 }
 
@@ -208,10 +208,10 @@ nav a:hover {
   display: inline-block;
   background-color: #007bff;
   color: white;
-  padding: 0.6rem 1rem; /* कम पैडिंग */
+  padding: 0.4rem 0.8rem; /* और कम पैडिंग */
   text-decoration: none;
   border-radius: 6px;
-  font-size: 0.9rem; /* छोटा फ़ॉन्ट साइज़ */
+  font-size: 0.8rem; /* और छोटा फ़ॉन्ट */
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -224,7 +224,7 @@ footer {
   background: #24292f;
   color: #f8f9fa;
   text-align: center;
-  padding: 0.8rem; /* कम पैडिंग */
-  margin-top: 2rem; /* कम मार्जिन */
-  font-size: 0.8rem; /* छोटा फ़ॉन्ट साइज़ */
+  padding: 0.4rem; /* और कम पैडिंग */
+  margin-top: 1rem; /* और कम मार्जिन */
+  font-size: 0.7rem; /* और छोटा फ़ॉन्ट */
 }

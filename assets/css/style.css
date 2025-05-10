@@ -218,3 +218,9 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
   }
+hr {
+  border: 0;
+  height: 2px;
+  background: #007bff;
+  margin-bottom: 1.5rem;
+    }

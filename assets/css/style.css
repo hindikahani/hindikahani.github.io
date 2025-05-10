@@ -9,23 +9,23 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif; /* फ़ॉन्ट बदला गया */
+  font-family: 'Poppins', sans-serif; /* Poppins फ़ॉन्ट */
   background: #f9f9f9;
   color: #333;
-  line-height: 1.7; /* थोड़ी बढ़ी हुई लाइन-हाइट पठनीयता के लिए */
-  font-size: 1rem; /* थोड़ा बड़ा फ़ॉन्ट साइज़ */
+  line-height: 1.7;
+  font-size: 0.9rem; /* मोबाइल और डिफ़ॉल्ट फ़ॉन्ट साइज़ */
 }
 
 .container {
   max-width: 960px;
-  margin: 1.5rem auto; /* थोड़ी ज़्यादा मार्जिन */
-  padding: 0 1.2rem; /* थोड़ी ज़्यादा पैडिंग */
+  margin: 1rem auto;
+  padding: 0 1rem;
 }
 
 header {
   background: #24292f;
   color: white;
-  padding: 1rem 1.2rem; /* थोड़ी ज़्यादा पैडिंग */
+  padding: 0.8rem 1rem;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -38,7 +38,7 @@ header .container {
 }
 
 header h1 {
-  font-size: 1.6rem; /* थोड़ी बड़ी हेडिंग */
+  font-size: 1.3rem;
 }
 
 nav {
@@ -46,16 +46,16 @@ nav {
   flex-direction: column;
   background-color: #24292f;
   position: absolute;
-  top: 60px; /* एडजस्टेड टॉप */
-  right: 1.2rem;
+  top: 55px;
+  right: 1rem;
   z-index: 1001;
 }
 
 nav a {
   color: white;
-  padding: 0.7rem 1.2rem; /* थोड़ी ज़्यादा पैडिंग */
+  padding: 0.6rem 1rem;
   text-decoration: none;
-  font-weight: 500; /* थोड़ा कम बोल्ड */
+  font-weight: 500;
 }
 
 nav a:hover {
@@ -63,39 +63,36 @@ nav a:hover {
 }
 
 .menu-toggle {
-  font-size: 1.7rem; /* थोड़ा बड़ा मेनू आइकन */
+  font-size: 1.5rem;
   cursor: pointer;
   color: white;
 }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 0 1rem;
-    margin: 2rem auto;
+  body {
+    font-size: 0.95rem; /* डेस्कटॉप के लिए थोड़ा बड़ा फ़ॉन्ट साइज़ (पहले से कम) */
   }
 
-  header {
-    padding: 1.2rem 1rem;
+  .latest-posts .post-list a,
+  .popular-posts .post-list a,
+  .post-wrapper .post-list a,
+  .view-all a,
+  .post-content {
+    font-size: 0.95rem; /* डेस्कटॉप के लिए थोड़ा बड़ा फ़ॉन्ट साइज़ (पहले से कम) */
+  }
+
+  .post-title {
+    font-size: 1.6rem; /* डेस्कटॉप के लिए हेडिंग साइज़ कम */
+  }
+
+  .latest-posts .section-title,
+  .popular-posts .section-title,
+  .post-wrapper .section-title {
+    font-size: 1.5rem; /* डेस्कटॉप के लिए हेडिंग साइज़ कम */
   }
 
   header h1 {
-    font-size: 1.8rem;
-  }
-
-  nav {
-    display: flex !important;
-    flex-direction: row;
-    position: static;
-    background: none;
-  }
-
-  nav a {
-    margin: 0 1rem;
-    padding: 0;
-  }
-
-  .menu-toggle {
-    display: none;
+    font-size: 1.5rem; /* डेस्कटॉप के लिए हेडिंग साइज़ कम */
   }
 }
 
@@ -103,10 +100,10 @@ nav a:hover {
 .latest-posts .section-title,
 .popular-posts .section-title,
 .post-wrapper .section-title {
-  font-size: 1.6rem; /* थोड़ी बड़ी हेडिंग */
-  margin: 2rem 0 1rem; /* थोड़ी ज़्यादा मार्जिन */
+  font-size: 1.4rem;
+  margin: 1.5rem 0 0.8rem;
   border-bottom: 2px solid #007bff;
-  padding-bottom: 0.4rem; /* थोड़ी ज़्यादा पैडिंग */
+  padding-bottom: 0.35rem;
   color: #333;
   font-weight: 700;
 }
@@ -115,18 +112,18 @@ nav a:hover {
 .latest-posts .post-list,
 .popular-posts .post-list,
 .post-wrapper .post-list {
-  margin-top: 0.8rem; /* थोड़ी ज़्यादा मार्जिन */
+  margin-top: 0.6rem;
 }
 
 .latest-posts .post-list a,
 .popular-posts .post-list a,
 .post-wrapper .post-list a {
   display: block;
-  padding: 0.8rem 0; /* थोड़ी ज़्यादा पैडिंग */
+  padding: 0.7rem 0;
   text-decoration: none;
   color: #333;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-  font-size: 1rem; /* थोड़ा बड़ा फ़ॉन्ट साइज़ */
+  font-size: 0.9rem; /* मोबाइल के लिए फ़ॉन्ट साइज़ */
 }
 
 .latest-posts .post-list a:hover,
@@ -144,34 +141,34 @@ nav a:hover {
 
 /* Single Post Page Styles */
 .post-wrapper {
-  padding: 1.2rem; /* थोड़ी ज़्यादा पैडिंग */
+  padding: 1.1rem;
 }
 
 .post-title {
-  font-size: 1.8rem; /* थोड़ी बड़ी हेडिंग */
+  font-size: 1.6rem;
   color: #333;
-  margin-bottom: 0.8rem; /* थोड़ी ज़्यादा मार्जिन */
-  padding-bottom: 0.3rem; /* थोड़ी ज़्यादा पैडिंग */
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.25rem;
   border-bottom: 2px solid #007bff;
 }
 
 .post-meta {
-  font-size: 0.85rem; /* थोड़ा बड़ा फ़ॉन्ट साइज़ */
+  font-size: 0.75rem;
   color: #6c757d;
   font-style: italic;
-  margin-bottom: 1rem; /* थोड़ी ज़्यादा मार्जिन */
+  margin-bottom: 0.9rem;
 }
 
 .post-content {
-  padding-top: 1rem; /* थोड़ी ज़्यादा पैडिंग */
-  font-size: 1.05rem; /* थोड़ा बड़ा फ़ॉन्ट साइज़ */
-  line-height: 1.8; /* थोड़ी बढ़ी हुई लाइन-हाइट */
+  padding-top: 0.9rem;
+  font-size: 0.9rem; /* मोबाइल के लिए फ़ॉन्ट साइज़ */
+  line-height: 1.8;
   color: #495057;
   letter-spacing: 0.01em;
 }
 
 .post-content p {
-  margin-bottom: 1.2rem; /* थोड़ी ज़्यादा मार्जिन */
+  margin-bottom: 1.1rem;
   padding-bottom: 0;
   border-bottom: none;
 }
@@ -180,12 +177,12 @@ nav a:hover {
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  font-size: 1.2rem; /* थोड़ी बड़ी हेडिंग */
+  font-size: 1.1rem;
   color: #333;
-  margin-top: 1.5rem; /* थोड़ी ज़्यादा मार्जिन */
-  margin-bottom: 0.5rem; /* थोड़ी ज़्यादा मार्जिन */
+  margin-top: 1.4rem;
+  margin-bottom: 0.45rem;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2rem; /* थोड़ी ज़्यादा पैडिंग */
+  padding-bottom: 0.15rem;
 }
 
 .post-content a {
@@ -200,13 +197,13 @@ nav a:hover {
 
 .post-content ul,
 .post-content ol {
-  margin-left: 1.2rem; /* थोड़ा ज़्यादा इंडेंट */
-  margin-bottom: 1rem; /* थोड़ी ज़्यादा मार्जिन */
+  margin-left: 1.1rem;
+  margin-bottom: 0.9rem;
 }
 
 /* View All Link */
 .view-all {
-  margin-top: 1.2rem; /* थोड़ी ज़्यादा मार्जिन */
+  margin-top: 1.1rem;
   text-align: center;
 }
 
@@ -214,10 +211,10 @@ nav a:hover {
   display: inline-block;
   background-color: #007bff;
   color: white;
-  padding: 0.6rem 1.2rem; /* थोड़ी ज़्यादा पैडिंग */
+  padding: 0.55rem 1.1rem;
   text-decoration: none;
   border-radius: 6px;
-  font-size: 1rem; /* थोड़ा बड़ा फ़ॉन्ट साइज़ */
+  font-size: 0.9rem; /* मोबाइल के लिए फ़ॉन्ट साइज़ */
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -230,7 +227,7 @@ footer {
   background: #24292f;
   color: #f8f9fa;
   text-align: center;
-  padding: 0.8rem; /* थोड़ी ज़्यादा पैडिंग */
-  margin-top: 1.8rem; /* थोड़ी ज़्यादा मार्जिन */
-  font-size: 0.85rem; /* थोड़ा बड़ा फ़ॉन्ट साइज़ */
+  padding: 0.7rem;
+  margin-top: 1.65rem;
+  font-size: 0.8rem;
 }

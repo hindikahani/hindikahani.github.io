@@ -162,13 +162,35 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-  font-size: 1.4rem;
+.post-content h1 {
+  font-size: 2rem;
   color: #333;
   margin-top: 1.8rem;
   margin-bottom: 0.7rem;
+  font-weight: 700;
+}
+
+.post-content h2 {
+  font-size: 1.6rem;
+  color: #333;
+  margin-top: 1.6rem;
+  margin-bottom: 0.6rem;
+  font-weight: 700;
+}
+
+.post-content h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 1.4rem;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.post-content h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
   font-weight: 700;
 }
 
@@ -218,9 +240,3 @@ footer {
   margin-top: 3rem;
   font-size: 0.9rem;
   }
-hr {
-  border: 0;
-  height: 2px;
-  background: #007bff;
-  margin-bottom: 1.5rem;
-    }

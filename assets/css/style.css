@@ -105,14 +105,16 @@ nav a:hover {
   font-weight: 700;
 }
 
-/* Post List Styling (Homepage) */
+/* Post List Styling (Homepage and Post Page's "अन्य कहानियाँ") */
 .latest-posts .post-list,
-.popular-posts .post-list {
+.popular-posts .post-list,
+.post-wrapper .post-list {
   margin-top: 1rem;
 }
 
 .latest-posts .post-list a,
-.popular-posts .post-list a {
+.popular-posts .post-list a,
+.post-wrapper .post-list a {
   display: block;
   padding: 0.7rem 0;
   text-decoration: none;
@@ -122,13 +124,15 @@ nav a:hover {
 }
 
 .latest-posts .post-list a:hover,
-.popular-posts .post-list a:hover {
+.popular-posts .post-list a:hover,
+.post-wrapper .post-list a:hover {
   background-color: #f8f9fa;
   color: #007bff;
 }
 
 .latest-posts .post-list a:last-child,
-.popular-posts .post-list a:last-child {
+.popular-posts .post-list a:last-child,
+.post-wrapper .post-list a:last-child {
   border-bottom: none;
 }
 
@@ -182,29 +186,6 @@ nav a:hover {
 .post-content ol {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
-}
-
-/* "अन्य कहानियाँ" Section (Post Page) - Same style as homepage lists */
-.post-wrapper .post-list {
-  margin-top: 1rem;
-}
-
-.post-wrapper .post-list a {
-  display: block;
-  padding: 0.7rem 0;
-  text-decoration: none;
-  color: #333;
-  border-bottom: 1px solid #e0e0e0;
-  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
-}
-
-.post-wrapper .post-list a:hover {
-  background-color: #f8f9fa;
-  color: #007bff;
-}
-
-.post-wrapper .post-list a:last-child {
-  border-bottom: none;
 }
 
 /* View All Link */

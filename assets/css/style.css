@@ -105,25 +105,27 @@ nav a:hover {
 /* Hero Section */
 .hero {
   background-color: #eef7ff;
-  padding: 1.5rem 1rem;
+  padding: 2rem 1rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 .hero h1 {
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
   color: #0066cc;
 }
 
-.hero p {
+.hero .post-meta {
   font-size: 1rem;
   color: #555;
+  font-style: italic;
 }
 
 /* Section Titles */
 .latest-posts .section-title,
-.popular-posts .section-title {
+.popular-posts .section-title,
+.post-wrapper .section-title {
   font-size: 1.4rem;
   margin: 2rem 0 1rem;
   border-bottom: 2px solid #ccc;
@@ -132,12 +134,14 @@ nav a:hover {
 
 /* Post List Styling */
 .latest-posts .post-list,
-.popular-posts .post-list {
+.popular-posts .post-list,
+.post-wrapper .post-list {
   margin-top: 1rem;
 }
 
 .latest-posts .post-list a,
-.popular-posts .post-list a {
+.popular-posts .post-list a,
+.post-wrapper .post-list a {
   display: block;
   padding: 0.7rem 0;
   text-decoration: none;
@@ -147,14 +151,50 @@ nav a:hover {
 }
 
 .latest-posts .post-list a:hover,
-.popular-posts .post-list a:hover {
+.popular-posts .post-list a:hover,
+.post-wrapper .post-list a:hover {
   background-color: #f9f9f9;
   color: #0066cc;
 }
 
 .latest-posts .post-list a:last-child,
-.popular-posts .post-list a:last-child {
+.popular-posts .post-list a:last-child,
+.post-wrapper .post-list a:last-child {
   border-bottom: none;
+}
+
+/* Single Post Page Styles */
+.post-content.story-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.post-content p,
+.post-content li {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1.2rem;
+}
+
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+  font-size: 1.7rem;
+  color: #333;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.3rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 /* View All Link */
@@ -176,86 +216,6 @@ nav a:hover {
 
 .view-all a:hover {
   background-color: #0052a3;
-}
-
-/* Single Post Page Styles */
-.post-wrapper {
-  padding: 1rem;
-}
-
-.post-content {
-  background: white;
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  padding: 1.5rem; /* Increased padding for better readability */
-}
-
-.post-title {
-  font-size: 2.2rem; /* Slightly larger title */
-  margin-bottom: 0.8rem;
-  color: #333;
-  border-bottom: 2px solid #eee; /* Added a subtle bottom border */
-  padding-bottom: 0.5rem;
-}
-
-.post-meta {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 1.5rem;
-  font-style: italic;
-}
-
-.post-content p,
-.post-content li {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  color: #444;
-  margin-bottom: 1.2rem;
-}
-
-.post-content h2,
-.post-content h3,
-.post-content h4 {
-  font-size: 1.7rem;
-  color: #333;
-  margin-top: 2rem;
-  margin-bottom: 0.7rem;
-  border-bottom: 1px solid #eee; /* Added subtle border to headings */
-  padding-bottom: 0.3rem;
-}
-
-.post-content ul,
-.post-content ol {
-  margin-left: 1.5rem;
-  margin-bottom: 1.2rem;
-}
-
-/* Mobile responsiveness for post content */
-@media (max-width: 600px) {
-  .post-wrapper {
-    padding: 0.8rem;
-  }
-
-  .post-content {
-    padding: 1rem;
-  }
-
-  .post-title {
-    font-size: 1.9rem;
-  }
-
-  .post-content p,
-  .post-content li {
-    font-size: 1.05rem;
-    line-height: 1.7;
-  }
-
-  .post-content h2,
-  .post-content h3,
-  .post-content h4 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-  }
 }
 
 /* Footer */

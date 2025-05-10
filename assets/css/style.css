@@ -102,71 +102,30 @@ nav a:hover {
   }
 }
 
-/* Hero Section */
+/* Updated Hero Section */
 .hero {
   background-color: #eef7ff;
-  padding: 1.5rem 1rem;
+  padding: 1rem; /* और भी कम पैडिंग */
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem; /* और भी कम मार्जिन */
 }
 
 .hero h1 {
-  font-size: 2rem;
-  margin-bottom: 0.3rem;
+  font-size: 2.2rem; /* थोड़ा बड़ा शीर्षक */
+  margin-bottom: 0.2rem;
   color: #0066cc;
 }
 
 .hero .post-meta {
-  font-size: 0.9rem;
+  font-size: 0.85rem; /* और भी छोटा मेटा फ़ॉन्ट */
   color: #555;
   font-style: italic;
 }
 
-/* Section Titles */
-.latest-posts .section-title,
-.popular-posts .section-title,
-.post-wrapper .section-title {
-  font-size: 1.4rem;
-  margin: 2rem 0 1rem;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 0.3rem;
-}
-
-/* Post List Styling */
-.latest-posts .post-list,
-.popular-posts .post-list,
-.post-wrapper .post-list {
-  margin-top: 1rem;
-}
-
-.latest-posts .post-list a,
-.popular-posts .post-list a,
-.post-wrapper .post-list a {
-  display: block;
-  padding: 0.7rem 0;
-  text-decoration: none;
-  color: #333;
-  border-bottom: 1px solid #eee;
-  transition: background-color 0.2s ease-in-out;
-}
-
-.latest-posts .post-list a:hover,
-.popular-posts .post-list a:hover,
-.post-wrapper .post-list a:hover {
-  background-color: #f9f9f9;
-  color: #0066cc;
-}
-
-.latest-posts .post-list a:last-child,
-.popular-posts .post-list a:last-child,
-.post-wrapper .post-list a:last-child {
-  border-bottom: none;
-}
-
-/* Single Post Page Styles */
+/* Updated Post Content */
 .post-content.story-card {
   background: white;
-  padding: 1rem;
+  padding: 1rem; /* कम पैडिंग */
   border-radius: 8px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 1.5rem;
@@ -183,7 +142,7 @@ nav a:hover {
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  font-size: 1.5rem;
+  font-size: 1.4rem; /* और छोटा हेडिंग */
   color: #333;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
@@ -195,6 +154,38 @@ nav a:hover {
 .post-content ol {
   margin-left: 1.5rem;
   margin-bottom: 1rem;
+}
+
+/* Updated "अन्य कहानियाँ" Section */
+.post-wrapper .section-title {
+  font-size: 1.3rem; /* छोटा सेक्शन शीर्षक */
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3rem;
+}
+
+.post-wrapper .post-list {
+  margin-top: 0.5rem;
+}
+
+.post-wrapper .post-list a {
+  display: block;
+  padding: 0.6rem 0;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  transition: background-color 0.2s ease-in-out;
+  font-size: 0.95rem; /* छोटा फ़ॉन्ट */
+}
+
+.post-wrapper .post-list a:hover {
+  background-color: #f9f9f9;
+  color: #0066cc;
+}
+
+.post-wrapper .post-list a:last-child {
+  border-bottom: none;
 }
 
 /* View All Link */

@@ -3,14 +3,20 @@ layout: blog
 ---
 
 <article class="container">
-  <h1 class="section-title">{{ page.title }}</h1>
-  <div class="post-content">
+  <section class="hero">
+    <h1>{{ page.title }}</h1>
+    <p class="post-meta">प्रकाशित: {{ page.date | date: "%B %d, %Y" }}</p>
+    {% if page.author %}
+    <p class="post-meta">लेखक: {{ page.author }}</p>
+    {% endif %}
+  </section>
+
+  <div class="post-content story-card">
     {{ content }}
   </div>
 
-  <!-- नई कहानियाँ सेक्शन -->
   <section style="margin-top: 3rem;">
-    <h2 class="section-title">नई कहानियाँ</h2>
+    <h2 class="section-title">अन्य कहानियाँ</h2>
     <div class="post-list">
       {% for post in site.posts limit:5 %}
         {% unless post.url == page.url %}

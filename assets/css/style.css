@@ -8,8 +8,8 @@
 }
 
 html, body {
-  margin: 0; /* HTML और बॉडी का मार्जिन रीसेट */
-  padding: 0; /* HTML और बॉडी की पैडिंग रीसेट */
+  margin: 0;
+  padding: 0;
   -webkit-text-size-adjust: 100%;
 }
 
@@ -20,6 +20,8 @@ body {
   line-height: 1.6;
   font-size: 0.9rem;
   overflow-anchor: none;
+  /* अगली प्रॉपर्टी पॉप-अप रोकने के लिए */
+  min-height: 100vh;
 }
 
 .container {

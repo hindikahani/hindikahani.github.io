@@ -12,6 +12,7 @@ body {
   background: #f9f9f9;
   color: #333;
   line-height: 1.6;
+  font-size: 0.9rem; /* डिफ़ॉल्ट फ़ॉन्ट साइज़ थोड़ा छोटा किया */
 }
 
 .container {
@@ -36,7 +37,7 @@ header .container {
 }
 
 header h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem; /* हेडर का फ़ॉन्ट साइज़ छोटा किया */
 }
 
 nav {
@@ -89,7 +90,7 @@ nav a:hover {
   }
 
   header h1 {
-    font-size: 1.7rem;
+    font-size: 1.5rem; /* डेस्कटॉप पर हेडर का फ़ॉन्ट साइज़ छोटा किया */
   }
 }
 
@@ -97,10 +98,10 @@ nav a:hover {
 .latest-posts .section-title,
 .popular-posts .section-title,
 .post-wrapper .section-title {
-  font-size: 1.6rem;
-  margin: 1.5rem 0 0.8rem;
+  font-size: 1.2rem; /* सेक्शन टाइटल्स छोटे किए */
+  margin: 1.2rem 0 0.6rem;
   border-bottom: 2px solid #007bff;
-  padding-bottom: 0.3rem;
+  padding-bottom: 0.25rem;
   color: #333;
   font-weight: 700;
 }
@@ -110,10 +111,11 @@ nav a:hover {
 .popular-posts .post-list a,
 .post-wrapper .post-list a {
   display: block;
-  padding: 0.6rem 0;
+  padding: 0.5rem 0;
   text-decoration: none;
   color: #333;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  font-size: 0.9rem; /* पोस्ट लिस्ट लिंक्स छोटे किए */
 }
 
 .latest-posts .post-list a:hover,
@@ -125,40 +127,41 @@ nav a:hover {
 
 /* Single Post Page Styles */
 .post-title {
-  font-size: 1.8rem;
+  font-size: 1.4rem; /* पोस्ट टाइटल छोटा किया */
   color: #333;
-  margin-bottom: 0.8rem;
-  padding-bottom: 0.3rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.25rem;
   border-bottom: 2px solid #007bff;
 }
 
 .post-meta {
-  font-size: 0.8rem;
+  font-size: 0.75rem; /* पोस्ट मेटा छोटा किया */
   color: #6c757d;
   font-style: italic;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
 }
 
 .post-content {
-  padding-top: 1rem;
-  line-height: 1.7;
+  padding-top: 0.8rem;
+  line-height: 1.6;
   color: #495057;
+  font-size: 0.9rem; /* कंटेंट का फ़ॉन्ट साइज़ छोटा किया */
 }
 
 .post-content p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
 }
 
 .post-content h1,
 .post-content h2,
 .post-content h3,
 .post-content h4 {
-  font-size: 1.1rem;
+  font-size: 1.0rem; /* कंटेंट हेडिंग्स छोटी कीं */
   color: #333;
-  margin-top: 1.3rem;
-  margin-bottom: 0.5rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.4rem;
   border-bottom: 1px solid #ccc;
-  padding-bottom: 0.2rem;
+  padding-bottom: 0.15rem;
 }
 
 .post-content a {
@@ -172,7 +175,7 @@ nav a:hover {
 
 /* View All Link */
 .view-all {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
   text-align: center;
 }
 
@@ -180,9 +183,10 @@ nav a:hover {
   display: inline-block;
   background-color: #007bff;
   color: white;
-  padding: 0.6rem 1rem;
+  padding: 0.5rem 0.9rem;
   text-decoration: none;
   border-radius: 6px;
+  font-size: 0.8rem; /* "व्यू ऑल" लिंक छोटा किया */
 }
 
 /* Footer */
@@ -190,7 +194,42 @@ footer {
   background: #24292f;
   color: #f8f9fa;
   text-align: center;
-  padding: 0.6rem;
-  margin-top: 1.5rem;
-  font-size: 0.8rem;
+  padding: 0.5rem;
+  margin-top: 1.2rem;
+  font-size: 0.7rem; /* फ़ूटर छोटा किया */
+}
+
+@media (min-width: 768px) {
+  body {
+    font-size: 1.0rem; /* डेस्कटॉप पर बॉडी फ़ॉन्ट साइज़ */
+  }
+
+  .latest-posts .post-list a,
+  .popular-posts .post-list a,
+  .post-wrapper .post-list a,
+  .view-all a,
+  .post-content {
+    font-size: 0.95rem; /* डेस्कटॉप पर कंटेंट फ़ॉन्ट साइज़ */
+  }
+
+  .post-title {
+    font-size: 1.5rem; /* डेस्कटॉप पर पोस्ट टाइटल */
+  }
+
+  .latest-posts .section-title,
+  .popular-posts .section-title,
+  .post-wrapper .section-title {
+    font-size: 1.3rem; /* डेस्कटॉप पर सेक्शन टाइटल */
+  }
+
+  header h1 {
+    font-size: 1.5rem; /* डेस्कटॉप पर हेडर */
+  }
+
+  .post-content h1,
+  .post-content h2,
+  .post-content h3,
+  .post-content h4 {
+    font-size: 1.1rem; /* डेस्कटॉप पर कंटेंट हेडिंग्स */
+  }
 }

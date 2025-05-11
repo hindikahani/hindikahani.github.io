@@ -7,8 +7,10 @@
   padding: 0;
 }
 
-html {
-  -webkit-text-size-adjust: 100%; /* ओवरऑल टेक्स्ट साइज़ एडजस्टमेंट को रोकें */
+html, body {
+  margin: 0; /* HTML और बॉडी का मार्जिन रीसेट */
+  padding: 0; /* HTML और बॉडी की पैडिंग रीसेट */
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
@@ -17,7 +19,7 @@ body {
   color: #333;
   line-height: 1.6;
   font-size: 0.9rem;
-  overflow-anchor: none; /* पॉप-अप जैसा जंपिंग रोकने की कोशिश */
+  overflow-anchor: none;
 }
 
 .container {

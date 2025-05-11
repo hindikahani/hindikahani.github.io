@@ -14,6 +14,7 @@ body {
   color: #333;
   line-height: 1.6; /* कम लाइन हाइट */
   font-size: 1.0rem; /* मोबाइल और डिफ़ॉल्ट फ़ॉन्ट साइज़ */
+  -webkit-text-size-adjust: 100%; /* ज़ूम को रोकने के लिए */
 }
 
 .container {
